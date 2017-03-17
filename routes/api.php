@@ -24,3 +24,7 @@ Route::post('/authenticate', [
 Route::post('/register', [
    'uses' => 'ApiAuthController@register'
 ]);
+
+Route::get('/users', [
+    'uses' => 'ApiAuthController@show'
+]);
